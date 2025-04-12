@@ -1,0 +1,80 @@
+.navbar.modern-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    height: 70px;
+    padding: 0 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .school-logo {
+    width: 190px;
+    height: 50px;
+    //border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.5rem;
+    border: 2px solid #fff;
+  }
+  
+  .school-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .navbar-links li {
+    position: relative;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #fdb813;
+    transform: translateY(-3px);
+  }
+  
+  /* Hamburger icon */
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  /* Mobile view */
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  

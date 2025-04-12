@@ -1,0 +1,37 @@
+.transition-splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+    overflow: hidden;
+  }
+  
+  .splash-text {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    animation: slideUp 3s ease forwards;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-150%);
+      opacity: 0;
+    }
+  }
+  
+  /* Fix mobile white background issue */
+  @media (max-width: 768px) {
+    .transition-splash {
+      background: linear-gradient(135deg, #8fd3f4, #84fab0);
+    }
+  }
+  

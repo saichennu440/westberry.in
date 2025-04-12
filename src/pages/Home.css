@@ -1,0 +1,280 @@
+/* Global smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero Section */
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  .hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Cards Section with background */
+  .cards-section {
+    background: #f7f7f7;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  .cards-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .card {
+    background: #fff;
+    width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .card h3 {
+    margin: 0.8rem 0;
+    font-size: 1.4rem;
+  }
+  .card p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Carousel (Explore Our Campus) Section */
+  .carousel-section {
+    margin: 3rem auto;
+    text-align: center;
+    position: relative;
+  }
+  .carousel-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-cards {
+    display: flex;
+    gap: 1.5rem;
+    
+    /* Optional: Set a fixed width for desktop if needed */
+    width: 100%;
+    justify-content: center;
+  }
+  .hover-image {
+    position: relative;
+    width: 240px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .hover-image:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  .hover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .hover-image:hover img {
+    transform: scale(1.1);
+  }
+  .hover-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Carousel Arrow Buttons */
+  .carousel-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .carousel-arrow:hover {
+    color: #007bff;
+  }
+  .left-arrow {
+    margin-left: 3rem;
+  }
+  .right-arrow {
+    margin-right: 3rem;
+  }
+  
+  /* Latest Events Section */
+  .latest-events-section {
+    background: linear-gradient(90deg, #8fd3f4, #84fab0);
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #fff;
+  }
+  .latest-events-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .event-card {
+    background: rgba(255, 255, 255, 0.9);
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #333;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .event-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+  .event-info {
+    padding: 1rem;
+  }
+  .event-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .event-info p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  /* Text + Image Sets Section + Single Sun on the Right */
+  .text-image-sets {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  /* Left Column Holding the Three Sets */
+  .ti-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Each Set: Image + Text */
+  .ti-set {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .ti-set img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  .ti-text h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+  }
+  .ti-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Right Column for the Single Sun Image */
+  .ti-right {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .sun-icon {
+    width: 200px;  /* Adjust as necessary */
+    height: auto;
+    position: relative;
+    transform: translate(60px, 80px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cards-container,
+    .events-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .carousel-container {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .text-image-sets {
+      flex-direction: column;
+      align-items: center;
+    }
+    .ti-set {
+      flex-direction: column;
+      text-align: center;
+    }
+    .ti-set img {
+      width: 100%;
+      height: auto;
+    }
+    .sun-icon {
+      transform: translate(20px, 20px);
+      width: 150px;
+    }
+  }
+  
