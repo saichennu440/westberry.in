@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/saichennu440/westberry.in.git/static/css/main.c6794d6d.css",
+    "main.js": "/saichennu440/westberry.in.git/static/js/main.6f4c25c6.js",
+    "static/js/453.220817f0.chunk.js": "/saichennu440/westberry.in.git/static/js/453.220817f0.chunk.js",
+    "index.html": "/saichennu440/westberry.in.git/index.html",
+    "main.c6794d6d.css.map": "/saichennu440/westberry.in.git/static/css/main.c6794d6d.css.map",
+    "main.6f4c25c6.js.map": "/saichennu440/westberry.in.git/static/js/main.6f4c25c6.js.map",
+    "453.220817f0.chunk.js.map": "/saichennu440/westberry.in.git/static/js/453.220817f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6794d6d.css",
+    "static/js/main.6f4c25c6.js"
+  ]
+}
