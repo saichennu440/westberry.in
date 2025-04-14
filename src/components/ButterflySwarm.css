@@ -1,0 +1,43 @@
+.swarm-butterfly {
+  position: absolute;
+  width: 80px;
+  height: auto;
+  pointer-events: none;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+}
+
+.fly-left {
+  top: calc(100% * var(--rand-top));
+  left: -100px;
+  animation-name: flyLeft;
+}
+
+.fly-right {
+  top: calc(100% * var(--rand-top));
+  right: -100px;
+  animation-name: flyRight;
+}
+
+@keyframes flyLeft {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flyRight {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100vw) rotate(-360deg);
+    opacity: 0;
+  }
+}

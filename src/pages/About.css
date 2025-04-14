@@ -6,6 +6,7 @@
   /* Common styles for each section */
   .about-section {
     margin-bottom: 3rem;
+    position: relative; 
   }
   .about-section h2 {
     font-size: 2rem;
@@ -24,7 +25,7 @@
     flex-direction: row-reverse;
   }
   .section-image {
-    width: 400px;
+    width: 500px;
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -39,11 +40,11 @@
   /* Teachers section grid layout */
   .teachers-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
   }
   .teacher-card {
-    padding: 0.5rem;
+    padding: 0.4rem;
     border: 1px solid #eee;
     border-radius: 8px;
     text-align: center;
@@ -51,10 +52,50 @@
   }
   .teacher-card:hover {
     transform: translateY(-5px);
+    background-color:#f2f7ff;
   }
   .teacher-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
   }
-  
+
+  /* Desktop butterfly: sits between heading and text */
+.scroll-butterfly.desktop {
+  display: none;
+  position: absolute;
+  top: 2.5rem;    /* tweak to sit just below your <h2> */
+  width: 80px;
+  height: auto;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Mobile butterfly: flows below the text */
+.scroll-butterfly.mobile {
+  display: none;
+  width: 80px;
+  height: auto;
+  pointer-events: none;
+  margin: 1rem auto;
+}
+
+/* Show/hide by viewport */
+@media (max-width: 767px) {
+  .scroll-butterfly.desktop {
+    display: none;
+  }
+  .scroll-butterfly.mobile {
+    display: block;
+    position: relative;
+  }
+}
+
+  @media (max-width: 768px) {
+    .teachers-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+  }
